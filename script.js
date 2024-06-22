@@ -10,7 +10,12 @@ function createGrid(){
             const gridDiv = document.createElement('div');
             gridDiv.className = "gridDiv";
             containerDiv.appendChild(gridDiv);
+            gridDiv.addEventListener("mouseover", () => {
+                gridDiv.style.backgroundColor = "blue";
+            })
         }
+
     }
 }
+
 createGrid();
