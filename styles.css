@@ -1,0 +1,17 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerDiv{
+    display:flex;
+}
+
+.gridDiv{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border-color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
