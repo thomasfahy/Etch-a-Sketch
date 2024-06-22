@@ -1,18 +1,31 @@
+.body{
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .mainContainer{
     display: flex;
     flex-direction: column;
+    width: 60vh;
+    height: 60vh;
 }
 
 .containerDiv{
     display:flex;
-    flex-grow: 1;
+    height: 500px;
 }
 
 .gridDiv{
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
-    border-color: black;
-    border: 1px solid black;
+    display: flex;
     box-sizing: border-box;
+    background-color: aqua;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 500px;
 }

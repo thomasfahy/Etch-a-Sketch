@@ -1,4 +1,4 @@
-const gridSize = 4;
+const gridSize = 8;
 
 function createGrid(){
     const mainContainer = document.querySelector(".mainContainer");
@@ -11,11 +11,18 @@ function createGrid(){
             gridDiv.className = "gridDiv";
             containerDiv.appendChild(gridDiv);
             gridDiv.addEventListener("mouseover", () => {
-                gridDiv.style.backgroundColor = "blue";
+                colorChange(gridDiv);
             })
         }
 
     }
 }
+function colorChange(gridDiv){
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    gridDiv.style.backgroundColor = ("#" + randomColor);
+}
+
+
+
 
 createGrid();
