@@ -1,4 +1,4 @@
-const gridSize = 8;
+const gridSize = 30;
 
 function createGrid(){
     const mainContainer = document.querySelector(".mainContainer");
@@ -21,8 +21,5 @@ function colorChange(gridDiv){
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     gridDiv.style.backgroundColor = ("#" + randomColor);
 }
-
-
-
 
 createGrid();

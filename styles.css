@@ -1,9 +1,6 @@
 .body{
     display: flex;
     background-color: bisque;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
@@ -16,16 +13,11 @@
 
 .containerDiv{
     display:flex;
-    height: 500px;
+    flex: 1;
 }
 
 .gridDiv{
     display: flex;
-    box-sizing: border-box;
-    background-color: aqua;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    background-color: rgb(208, 223, 223);
     width: 500px;
 }
