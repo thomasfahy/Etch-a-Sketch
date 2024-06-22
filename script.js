@@ -1,4 +1,4 @@
-const gridSize = 30;
+const gridSize = 20;
 
 function createGrid(){
     const mainContainer = document.querySelector(".mainContainer");
