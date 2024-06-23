@@ -1,3 +1,7 @@
+*{
+    background-color: rgb(129, 247, 129);
+}
+
 .body{
     margin: 0;
     padding: 0;
@@ -7,6 +11,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.submitSize{
+    height: 22px;
+}
+.sizeInput{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 45px;
 }
 .title{
     display: flex;
@@ -22,6 +35,7 @@ h1{
 .center{
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .mainContainer{
@@ -29,11 +43,13 @@ h1{
     flex-direction: column;
     width: 500px;
     height: 500px;
+    border: 30px solid rgb(250, 126, 112);
 }
 
 .containerDiv{
     display:flex;
     flex: 1;
+    background-color: rgb(208, 223, 223);
 }
 
 .gridDiv{
