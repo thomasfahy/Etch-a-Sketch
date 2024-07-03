@@ -32,11 +32,13 @@ sizeButton = document.querySelector(".submitSize");
 
 sizeButton.addEventListener("click", () => {
     console.log("button press");
-    var newGridSize = document.getElementById("newGridSize");
-    console.log(newGridSize);
-    if (newGridSize <= 100 && newGridSize > 1){
+    const newGridSize = document.getElementById("newGridSize");
+    const newGridSizeValue = newGridSize.value;
+    console.log(newGridSizeValue);
+    if (newGridSizeValue <= 100 && newGridSizeValue > 1){
+        const mainContainer = document.querySelector(".mainContainer");
         mainContainer.replaceChildren('');
-        createGrid(newGridSize);
+        createGrid(newGridSizeValue);
     }
     else{
         alert("Must be a value larger than 1 and less than 100");
